@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerBuy">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #252525;">
+         <children>
+            <Button fx:id="buy" layoutX="80.0" layoutY="395.0" mnemonicParsing="false" onAction="#buybutton" text="Buy">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Button>
+            <Button fx:id="back" layoutX="450.0" layoutY="395.0" mnemonicParsing="false" onAction="#Back" text="back">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Button>
+            <Button fx:id="showList" layoutX="601.0" layoutY="395.0" mnemonicParsing="false" onAction="#Showlist" text="Refresh">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Button>
+            <TableView fx:id="totaltable" layoutX="14.0" layoutY="144.0" prefHeight="200.0" prefWidth="750.0">
+               <columns>
+                  <TableColumn fx:id="Name" prefWidth="148.79998779296875" text="Name" />
+                  <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+                  <TableColumn fx:id="Country" prefWidth="112.79998779296875" text="Country" />
+                  <TableColumn fx:id="Age" prefWidth="49.59991455078125" text="Age" />
+                  <TableColumn fx:id="Height" prefWidth="75.0" text="Height" />
+                  <TableColumn fx:id="Club" prefWidth="75.0" text="Clubname" />
+                  <TableColumn fx:id="Position" prefWidth="75.0" text="Position" />
+                  <TableColumn fx:id="Number" prefWidth="75.0" text="Number" />
+                  <TableColumn fx:id="Salary" prefWidth="125.60001220703123" text="Weekly salary" />
+               </columns>
+            </TableView>
+            <Label layoutX="175.0" layoutY="41.0" text="Transfer Window(Buy)" textFill="#dd7272">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Button fx:id="Info" layoutX="273.0" layoutY="395.0" mnemonicParsing="false" onAction="#Info" prefHeight="33.0" prefWidth="69.0" text="Show info" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

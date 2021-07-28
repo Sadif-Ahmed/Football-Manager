@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayerDetails">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@Argentina%20vs%20Nigeria%20Football%20Facebook%20Post.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="6.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="158.0" layoutY="14.0" text="Player Info Page">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="91.0" text="Name" textFill="#d0ff00" />
+            <Label layoutX="63.0" layoutY="130.0" text="Club" textFill="#d5f200" />
+            <Label layoutX="63.0" layoutY="174.0" text="Country" textFill="#ddf502" />
+            <Label layoutX="63.0" layoutY="214.0" text="Position" textFill="#e0f801" />
+            <Label layoutX="63.0" layoutY="300.0" text="Salary" textFill="#f2ff00" />
+            <Label layoutX="63.0" layoutY="253.0" text="Number" textFill="#ddff02" />
+            <Label fx:id="Name" layoutX="198.0" layoutY="91.0" text="Label" textFill="#fc0000" />
+            <Label fx:id="Club" layoutX="198.0" layoutY="130.0" text="Label" textFill="RED" />
+            <Label fx:id="Country" layoutX="198.0" layoutY="174.0" text="Label" textFill="RED" />
+            <Label fx:id="Position" layoutX="198.0" layoutY="214.0" text="Label" textFill="#f50101" />
+            <Label fx:id="Number" layoutX="198.0" layoutY="253.0" text="Label" textFill="#f80000" />
+            <Label fx:id="Salary" layoutX="198.0" layoutY="300.0" text="Label" textFill="RED" />
+            <Label layoutX="321.0" layoutY="91.0" text="Age" textFill="#c0ee06" />
+            <Label layoutX="318.0" layoutY="130.0" text="Height" textFill="#faff00" />
+            <Label fx:id="Age" layoutX="415.0" layoutY="91.0" text="Label" textFill="#f20000" />
+            <Label fx:id="Height" layoutX="415.0" layoutY="130.0" text="Label" textFill="RED" />
+            <Button fx:id="Back" layoutX="504.0" layoutY="344.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

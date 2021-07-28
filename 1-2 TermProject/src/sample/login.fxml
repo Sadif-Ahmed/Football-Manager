@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="475.0" style="-fx-background-color: #252525;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="525.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Dark%20Purple%20Football%20Tournament%20Facebook%20Post.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="234.0" text="ClubName" textFill="#f80303" />
+      <Label layoutX="63.0" layoutY="292.0" text="Password" textFill="#fc0707" />
+      <PasswordField fx:id="passwordText" layoutX="215.0" layoutY="288.0" />
+      <TextField fx:id="userText" layoutX="215.0" layoutY="230.0" />
+      <Label layoutX="91.0" text="Football Manager">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9200000166893005" green="0.07360000163316727" blue="0.07360000163316727" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+    <Button fx:id="Submit" layoutX="92.0" layoutY="359.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+      <Button fx:id="Reset" layoutX="290.0" layoutY="359.0" mnemonicParsing="false" onAction="#Reset" text="Reset" />
+   </children>
+</AnchorPane>
